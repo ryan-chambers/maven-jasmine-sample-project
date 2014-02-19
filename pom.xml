@@ -29,11 +29,11 @@
 				</executions>
 				<configuration>
 					<sourceIncludes>
-						<include>jquery-1.7.min.js</include>
+						<include>jquery-2.1.0.min.js</include>
 						<include>*.js</include>
 					</sourceIncludes>
 					<specIncludes>
-						<include>lib/sinon-1.2.0.js</include>
+						<include>lib/sinon-1.8.2.js</include>
 						<include>lib/jasmine-sinon.js</include>
 						<include>*.js</include>
 					</specIncludes>
@@ -49,7 +49,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<scm>
-		<url>http://github.com/searls/jasmine-maven-plugin</url>
-	</scm>
 </project>

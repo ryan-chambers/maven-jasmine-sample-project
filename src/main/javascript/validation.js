@@ -18,11 +18,10 @@ var validation = function() {
 			$.ajax({
 				type : 'POST',
 				url : '/validateUserName',
-				async : false,
 				data : {
 					alias : escape(username)
-				},
-				success : function(result) {
+				}
+			}).done(function(result) {
 					var resultNode, resultMessage;
 					if (result != null) {
 						resultNode = result.getElementsByTagName('result');
@@ -37,6 +36,8 @@ var validation = function() {
 					} else {
 					}
 				}
+			).always(function() {
+				console.log('always');
 			});
 
 			return usernameValid;

@@ -1,12 +1,12 @@
 describe('alphanumeric validation', function() {
 	it('should detect valid alphanumeric sequences', function() {
-		var field = $('<input type="text" id="test_field" value="aB1" />');
+		var field = $('<input type="text" id="test_field" value="aB1" />'),
 			isValidAlphaNumeric = validation.validateAlphaNumeric(field);
 		expect(isValidAlphaNumeric).toEqual(true);
 	});
 
 	it('should detect invalid alphanumeric sequences', function() {
-		var field = $('<input type="text" id="test_field" value="ab@google.com" />');
+		var field = $('<input type="text" id="test_field" value="ab@google.com" />'),
 			isValidAlphaNumeric = validation.validateAlphaNumeric(field);
 		expect(isValidAlphaNumeric).toEqual(false);
 	});
