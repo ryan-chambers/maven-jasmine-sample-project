@@ -21,5 +21,5 @@ Release Notes
 v0.0.2
 
 Feb 18, 2014
-- Updated software versions (jasmine maven plugin)
+- Updated software versions (jasmine maven plugin, jquery)
 - *NOTE* Maven build no longer works; but running in browser does. Maybe related to [this issue](https://github.com/searls/jasmine-maven-plugin/issues/205) filed for the plugin?
