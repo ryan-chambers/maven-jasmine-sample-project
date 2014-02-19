@@ -4,11 +4,15 @@
 
 	<groupId>rchambers</groupId>
 	<artifactId>maven-jasmine-sample-project</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>A Jasmine Project</name>
 	<url>http://github.com/searls/jasmine-maven-plugin</url>
+
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
 	<build>
 		<plugins>
@@ -38,11 +42,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.1</version>
+				<version>2.4</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<url>http://github.com/searls/jasmine-maven-plugin</url>
+	</scm>
 </project>
